@@ -14,13 +14,13 @@ public class Ejercicio02 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("-- Jugador 1 --");
-		System.out.print("Introduzca una contraseÃ±a para adivinar: ");
+		System.out.print("Introduzca una contraseña para adivinar: ");
 		password = sc.next();
 		System.out.println();
 		
 		System.out.println("-- Jugador 2 --");
 		
-		System.out.print("ContraseÃ±a secreta: [");
+		System.out.print("Contraseña secreta: [");
 		for (int i = 0 ; i < password.length() ; i++) {
 			
 			System.out.print("*");
@@ -32,23 +32,23 @@ public class Ejercicio02 {
 		while (cont < password.length()) {
 			
 			System.out.println();
-			System.out.print("Intente adivinar la contraseÃ±a secreta: ");
+			System.out.print("Intente adivinar la contraseña secreta: ");
 			userTry = sc.next();
 			System.out.println();
 			
 			if (userTry.length() < password.length()) {
 				
-				System.out.println("ERROR: Ha introducido una contraseÃ±a mÃ¡s corta");
+				System.out.println("ERROR: Ha introducido una contraseña más corta");
 				
 			} else if (userTry.length() > password.length()) {
 				
-				System.out.println("ERROR: Ha introducido una contraseÃ±a mÃ¡s larga");
+				System.out.println("ERROR: Ha introducido una contraseña más larga");
 				
 			} else {
 				
 				cont = 0;
 				
-				System.out.print("ContraseÃ±a secreta: [");
+				System.out.print("Contraseña secreta: [");
 				
 				for (int i = 0 ; i < password.length() ; i++) {
 					
@@ -72,7 +72,7 @@ public class Ejercicio02 {
 
 		}
 		
-		System.out.println("Â¡ENHORABUENA! Has adivinado la contraseÃ±a");
+		System.out.println("¡ENHORABUENA! Has adivinado la contraseña");
 		
 		sc.close();
 		

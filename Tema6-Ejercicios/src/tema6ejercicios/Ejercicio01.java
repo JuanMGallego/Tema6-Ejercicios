@@ -20,7 +20,7 @@ public class Ejercicio01 {
 		
 		if (phrase1.length() < phrase2.length()) {
 			
-			System.out.println("La primera frase es mÃ¡s corta");
+			System.out.println("La primera frase es más corta");
 			
 		} else if (phrase1.length() == phrase2.length()) {
 			
@@ -28,7 +28,7 @@ public class Ejercicio01 {
 			
 		} else {
 			
-			System.out.println("La segunda frase es mÃ¡s corta");
+			System.out.println("La segunda frase es más corta");
 			
 		}
 		
