@@ -8,7 +8,7 @@ public class Ejercicio08 {
 		
 		String phrase;
 		String divPhrase[];
-		final String prefix = "JavalÌn, javalon";
+		final String prefix = "Javal√≥n, javalon";
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -20,7 +20,7 @@ public class Ejercicio08 {
 		
 		if (divPhrase.length == 1) {
 			
-			System.out.println("La frase no est· escrita en el idioma de Javalandia");
+			System.out.println("La frase no est√° escrita en el idioma de Javalandia");
 			
 		} else {
 			
