@@ -6,8 +6,13 @@ public class Ejercicio06 {
 
 	public static void main(String[] args) {
 		
+		//Frase introducida por el usuario
 		String phrase;
+		
+		//Palabra por separado
 		String word;
+		
+		//Array de la frase separada por palabras
 		String sepWords[];
 		int timesWord = 0;
 		
