@@ -7,8 +7,8 @@ public class Ejercicio08 {
 	public static void main(String[] args) {
 		
 		String phrase;
-		final String prefix = "Javal√≠n, javal√≥n";
-		final String sufix = "Javal√©n, len, len";
+		final String prefix = "JavalÌn, javalÛn";
+		final String sufix = "JavalÈn, len, len";
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -20,45 +20,21 @@ public class Ejercicio08 {
 			
             phrase = phrase.substring(prefix.length() + 1);
             
-            while (phrase.length() > 0) {
-            	
-            	if (phrase.charAt(0) == ' ' || phrase.charAt(0) == '\t') {
-            		
-            		phrase = phrase.replace("" + phrase.charAt(0), "");
-            		
-            	} else {
-            		
-            		break;
-            		
-            	}
-            	
-            }
+            phrase = phrase.trim();
             
-            System.out.println("El mensaje traducido del javaland√©s es: " + phrase);
+            System.out.println("El mensaje traducido del javalandÈs es: " + phrase);
             
         } else if (phrase.endsWith(" " + sufix) || phrase.endsWith("\t" + sufix)) {
         	
             phrase = phrase.substring(0, phrase.length() - sufix.length());
             
-            while (phrase.length() > 0) {
-            	
-            	if (phrase.charAt(phrase.length() - 1) == ' ' || phrase.charAt(phrase.length() - 1) == '\t') {
-            		
-            		phrase = phrase.replace("" + phrase.charAt(phrase.length() - 1), "");
-            		
-            	} else {
-            		
-            		break;
-            		
-            	}
-            	
-            }
+            phrase = phrase.trim();
             
-            System.out.println("El mensaje de un dialecto del javaland√©s es: " + phrase);
+            System.out.println("El mensaje de un dialecto del javalandÈs es: " + phrase);
             
         } else {
         	
-            System.out.println("La frase introducida no est√° escrita en el idioma de Javalandia.");
+            System.out.println("La frase introducida no est· escrita en el idioma de Javalandia.");
             
         }
 		
