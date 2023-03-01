@@ -9,14 +9,14 @@ public static void main(String[] args) {
 		//Frase introducida por el usuario
 		String phrase;
 		
-		//Cadena para añadir las letras y generar la frase codificada
+		//Cadena para añadir las letras y generar la frase descodificada
 		String desCodif = "";
 		
 		//Constantes de cada conjunto
 		final char[] conjunto1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};
 		final char[] conjunto2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};
 		
-		//CAracter para almacenar el caracter utilizado en cada momento
+		//Caracter para almacenar el caracter utilizado en cada momento
 		char c;
 		
 		//Array para separar la frase por caracteres
@@ -53,12 +53,12 @@ public static void main(String[] args) {
 	}
 	
 	/**
-	 * Función para comprobar y modificar las letras que se tengan que codificar
+	 * Función para comprobar y modificar las letras que se tengan que descodificar
 	 * 
-	 * @param conjunto1 Constante del primer conjuunto con las letras a codificar
+	 * @param conjunto1 Constante del primer conjuunto con las letras a descodificar
 	 * @param conjunto2 Constante del segundo conjunto con las letras nuevas
-	 * @param c Caracter a comprobar y codificar
-	 * @return c Caracter ya codificado
+	 * @param c Caracter a comprobar y descodificar
+	 * @return c Caracter ya descodificado
 	 */
 	static char codifica(char conjunto1[],char conjunto2[], char c) {
 		
